@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// import ReactDOM from "react-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import Ingredients from "./components/Ingredients";
+import BestSeller from "./components/BestSeller";
+import Menu from "./components/Menu";
+import Limited from "./components/Limited";
+import Carousel from "./components/Carousel";
+import Location from "./components/Location";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Band from "./components/Band";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   
+    <>
+      <Navbar />
+
+      <Home/>
+      <Band />
+      <Ingredients />
+      <BestSeller />
+      <Menu />
+      <Limited />
+      <Carousel />
+      <Location />
+      <Contact />
+      <Footer />
+    </>
   );
 }
 
